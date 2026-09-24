@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "id": "programacion-demo",
+  "subject": "programacion",
+  "title": "Algoritmos de la forja",
+  "description": "Condicionales y bucles en pseudocódigo de demostración. No se ejecuta código ingresado.",
+  "order": 1,
+  "demo": true,
+  "exercises": [
+    {
+      "id": "p-01",
+      "topic": "condicionales",
+      "type": "multiple-choice",
+      "difficulty": 1,
+      "question": "Si edad = 18 y la condición es edad >= 18, ¿qué rama se ejecuta?",
+      "options": [
+        "Si",
+        "SiNo",
+        "Ninguna"
+      ],
+      "answer": "Si",
+      "explanation": "18 satisface la comparación >= 18.",
+      "hint": "",
+      "tags": [
+        "condicionales"
+      ]
+    },
+    {
+      "id": "p-02",
+      "topic": "condicionales",
+      "type": "true-false",
+      "difficulty": 1,
+      "question": "En una condición, 7 > 9 resulta verdadero.",
+      "options": [
+        "Verdadero",
+        "Falso"
+      ],
+      "answer": "Falso",
+      "explanation": "7 es menor que 9.",
+      "tags": [
+        "condicionales"
+      ]
+    },
+    {
+      "id": "p-03",
+      "topic": "condicionales",
+      "type": "predict-code",
+      "difficulty": 2,
+      "question": "¿Qué se escribe al ejecutar este pseudocódigo?",
+      "answer": "A",
+      "rubric": {
+        "mode": "exact",
+        "accepted": [
+          "A"
+        ]
+      },
+      "explanation": "La condición 4 mod 2 = 0 es verdadera.",
+      "tags": [
+        "condicionales"
+      ],
+      "code": "n <- 4\nSi n MOD 2 = 0 Entonces\n  Escribir \"A\"\nSiNo\n  Escribir \"B\"\nFinSi"
+    },
+    {
+      "id": "p-04",
+      "topic": "condicionales",
+      "type": "complete-code",
+      "difficulty": 2,
+      "question": "Completa la palabra faltante para cerrar el condicional.",
+      "answer": "FinSi",
+      "rubric": {
+        "mode": "exact",
+        "accepted": [
+          "FinSi"
+        ]
+      },
+      "explanation": "PSeInt cierra un condicional Si con FinSi.",
+      "tags": [
+        "condicionales"
+      ],
+      "code": "Si x > 0 Entonces\n  Escribir x\n_____"
+    },
+    {
+      "id": "p-05",
+      "topic": "condicionales",
+      "type": "debug-code",
+      "difficulty": 2,
+      "question": "Encuentra el error: Si edad > 18 Entonces ... FinSi. Se quería incluir a quienes cumplen exactamente 18. Indica el operador correcto.",
+      "answer": "Cambiar > por >=.",
+      "rubric": {
+        "mode": "keywords",
+        "required": [
+          [
+            ">=",
+            "mayor o igual"
+          ]
+        ]
+      },
+      "explanation": "El operador > excluye 18; >= lo incluye.",
+      "tags": [
+        "condicionales"
+      ]
+    },
+    {
+      "id": "p-06",
+      "topic": "bucles",
+      "type": "numeric",
+      "difficulty": 1,
+      "question": "¿Cuántas veces itera Para i <- 1 Hasta 4 (paso 1)?",
+      "answer": 4,
+      "tolerance": 0,
+      "explanation": "Los valores son 1, 2, 3 y 4.",
+      "tags": [
+        "bucles"
+      ]
+    },
+    {
+      "id": "p-07",
+      "topic": "bucles",
+      "type": "multiple-choice",
+      "difficulty": 1,
+      "question": "¿Qué estructura repite mientras una condición sea verdadera?",
+      "options": [
+        "Mientras",
+        "Si",
+        "Segun",
+        "Escribir"
+      ],
+      "answer": "Mientras",
+      "explanation": "Mientras evalúa la condición en cada vuelta.",
+      "hint": "",
+      "tags": [
+        "bucles"
+      ]
+    },
+    {
+      "id": "p-08",
+      "topic": "bucles",
+      "type": "predict-code",
+      "difficulty": 2,
+      "question": "¿Qué número final se escribe?",
+      "answer": "6",
+      "rubric": {
+        "mode": "exact",
+        "accepted": [
+          "6"
+        ]
+      },
+      "explanation": "Se suman 1+2+3 = 6.",
+      "tags": [
+        "bucles"
+      ],
+      "code": "s <- 0\nPara i <- 1 Hasta 3 Hacer\n  s <- s + i\nFinPara\nEscribir s"
+    },
+    {
+      "id": "p-09",
+      "topic": "bucles",
+      "type": "logic",
+      "difficulty": 2,
+      "question": "¿Qué valor tiene contador tras dos incrementos desde 0?",
+      "answer": "2",
+      "rubric": {
+        "mode": "exact",
+        "accepted": [
+          "2"
+        ]
+      },
+      "explanation": "0 → 1 → 2.",
+      "tags": [
+        "bucles"
+      ]
+    },
+    {
+      "id": "p-10",
+      "topic": "bucles",
+      "type": "puzzle",
+      "difficulty": 2,
+      "question": "La puerta ejecuta i <- i + 1 partiendo de i=4. ¿Qué valor tiene i después?",
+      "answer": "5",
+      "rubric": {
+        "mode": "exact",
+        "accepted": [
+          "5"
+        ]
+      },
+      "explanation": "El nuevo valor es 4 + 1 = 5.",
+      "tags": [
+        "bucles"
+      ]
+    }
+  ]
+}

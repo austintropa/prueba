@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "id": "calculo-demo",
+  "subject": "calculo",
+  "title": "Fundamentos del cambio",
+  "description": "Aritmética y primeras ideas de funciones, solo para demostrar el motor. Los contenidos reales se incorporan después.",
+  "order": 1,
+  "demo": true,
+  "exercises": [
+    {
+      "id": "c-01",
+      "topic": "funciones",
+      "type": "multiple-choice",
+      "difficulty": 1,
+      "question": "Si f(x) = 2x + 3, ¿cuánto vale f(2)?",
+      "options": [
+        "5",
+        "7",
+        "9",
+        "11"
+      ],
+      "answer": "7",
+      "explanation": "Sustituye x por 2: 2·2 + 3 = 7.",
+      "hint": "",
+      "tags": [
+        "funciones"
+      ]
+    },
+    {
+      "id": "c-02",
+      "topic": "funciones",
+      "type": "numeric",
+      "difficulty": 1,
+      "question": "Si f(x) = x², calcula f(3).",
+      "answer": 9,
+      "tolerance": 0,
+      "explanation": "Sustituye 3 en x²: 3² = 9.",
+      "tags": [
+        "funciones"
+      ]
+    },
+    {
+      "id": "c-03",
+      "topic": "funciones",
+      "type": "multiple-choice",
+      "difficulty": 2,
+      "question": "La función f(x) = x + 4 tiene f(0) igual a...",
+      "options": [
+        "0",
+        "1",
+        "4",
+        "−4"
+      ],
+      "answer": "4",
+      "explanation": "El valor de f(0) se obtiene sustituyendo x por 0.",
+      "hint": "",
+      "tags": [
+        "funciones"
+      ]
+    },
+    {
+      "id": "c-04",
+      "topic": "funciones",
+      "type": "numeric",
+      "difficulty": 2,
+      "question": "Si f(x) = 3x − 2 y f(x) = 10, ¿cuánto vale x?",
+      "answer": 4,
+      "tolerance": 0,
+      "explanation": "3x − 2 = 10 ⇒ 3x = 12 ⇒ x = 4.",
+      "tags": [
+        "funciones"
+      ]
+    },
+    {
+      "id": "c-05",
+      "topic": "funciones",
+      "type": "short",
+      "difficulty": 2,
+      "question": "Para f(x)=x+1, escribe el valor de f(−1).",
+      "answer": "0",
+      "rubric": {
+        "mode": "exact",
+        "accepted": [
+          "0"
+        ]
+      },
+      "explanation": "−1 + 1 = 0.",
+      "tags": [
+        "funciones"
+      ]
+    },
+    {
+      "id": "c-06",
+      "topic": "ecuaciones",
+      "type": "true-false",
+      "difficulty": 1,
+      "question": "Sumar el mismo número en ambos lados de una igualdad conserva la igualdad.",
+      "options": [
+        "Verdadero",
+        "Falso"
+      ],
+      "answer": "Verdadero",
+      "explanation": "La operación equivalente se realiza en ambos lados.",
+      "tags": [
+        "ecuaciones"
+      ]
+    },
+    {
+      "id": "c-07",
+      "topic": "ecuaciones",
+      "type": "numeric",
+      "difficulty": 1,
+      "question": "Resuelve 2x + 6 = 14. Escribe x.",
+      "answer": 4,
+      "tolerance": 0,
+      "explanation": "Resta 6 a ambos lados y divide 8 entre 2.",
+      "tags": [
+        "ecuaciones"
+      ]
+    },
+    {
+      "id": "c-08",
+      "topic": "ecuaciones",
+      "type": "multiple-choice",
+      "difficulty": 2,
+      "question": "¿Cuál es la solución de 5x = 20?",
+      "options": [
+        "2",
+        "4",
+        "5",
+        "10"
+      ],
+      "answer": "4",
+      "explanation": "Divide ambos miembros entre 5.",
+      "hint": "",
+      "tags": [
+        "ecuaciones"
+      ]
+    },
+    {
+      "id": "c-09",
+      "topic": "ecuaciones",
+      "type": "numeric",
+      "difficulty": 2,
+      "question": "Resuelve 3(x − 1) = 12. Escribe x.",
+      "answer": 5,
+      "tolerance": 0,
+      "explanation": "Divide entre 3: x − 1 = 4; suma 1.",
+      "tags": [
+        "ecuaciones"
+      ]
+    },
+    {
+      "id": "c-10",
+      "topic": "ecuaciones",
+      "type": "puzzle",
+      "difficulty": 2,
+      "question": "El sello exige la solución entera de x + 7 = 12. ¿Qué número introduces?",
+      "answer": "5",
+      "rubric": {
+        "mode": "exact",
+        "accepted": [
+          "5"
+        ]
+      },
+      "explanation": "Restar 7 a 12 da 5.",
+      "tags": [
+        "ecuaciones"
+      ]
+    }
+  ]
+}

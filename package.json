@@ -1,0 +1,16 @@
+{
+  "name": "umbral-del-saber",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "node tools/validate-content.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "serve": "python3 -m http.server 8765",
+    "build": "npm run validate && node tools/build.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.9",
+    "jsdom": "^27.4.0"
+  }
+}

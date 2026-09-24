@@ -1,0 +1,7 @@
+const KEY='umbral-del-saber-v1';
+export function newGame(name='Viajero',appearance={}){return {version:1,createdAt:Date.now(),name,appearance:{skin:'#b97b60',hair:'#292039',style:'short',garb:'#574674',accent:'#d6a86c',accessory:'none',className:'Arcanista',...appearance},level:1,xp:0,hp:35,gold:0,inventory:['espada-rota'],equipment:{weapon:'espada-rota',armor:null,accessory:null},learn:{},history:[],progress:{},totalValid:0,chests:0,missions:{},settings:{volume:.25,reducedMotion:false,highContrast:false},timer:{phase:'focus',remaining:2700,running:false,endsAt:0,focusSeconds:0,completed:0},scene:'world',subject:null,unit:null,room:0,battle:null,challenge:null,notice:'Tu expedición comienza.'};}
+export function load(){try{const raw=localStorage.getItem(KEY);if(!raw)return null;const s=JSON.parse(raw);if(!s||s.version!==1||!s.appearance||!s.progress||!s.timer)throw Error('Estructura de partida incompatible');return s}catch(e){console.warn('Partida no disponible:',e);return null}}
+export function save(s){try{localStorage.setItem(KEY,JSON.stringify(s));return true}catch(e){console.error('No se pudo guardar la partida',e);return false}}
+export function erase(){localStorage.removeItem(KEY)}
+export function recoverTimer(t){if(t.running&&t.endsAt){const left=Math.ceil((t.endsAt-Date.now())/1000);t.remaining=Math.max(0,left)}return t}
+export function progressFor(s,unitId){return s.progress[unitId]??(s.progress[unitId]={rooms:0,boss:false,attempts:0,correct:0})}

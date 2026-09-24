@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "id": "bd-demo",
+  "subject": "bases-de-datos",
+  "title": "Salas del archivo relacional",
+  "description": "Entidades, claves y relaciones elementales en una muestra DEMO.",
+  "order": 1,
+  "demo": true,
+  "exercises": [
+    {
+      "id": "b-01",
+      "topic": "entidades",
+      "type": "multiple-choice",
+      "difficulty": 1,
+      "question": "En una base de datos de biblioteca, ¿cuál podría ser una entidad?",
+      "options": [
+        "Libro",
+        "Color azul",
+        "Sumar",
+        "Verdadero"
+      ],
+      "answer": "Libro",
+      "explanation": "Un libro es un objeto del dominio sobre el cual se guardan datos.",
+      "hint": "",
+      "tags": [
+        "entidades"
+      ]
+    },
+    {
+      "id": "b-02",
+      "topic": "entidades",
+      "type": "true-false",
+      "difficulty": 1,
+      "question": "Una entidad puede tener atributos como título y año.",
+      "options": [
+        "Verdadero",
+        "Falso"
+      ],
+      "answer": "Verdadero",
+      "explanation": "Los atributos describen propiedades de una entidad.",
+      "tags": [
+        "entidades"
+      ]
+    },
+    {
+      "id": "b-03",
+      "topic": "entidades",
+      "type": "short",
+      "difficulty": 2,
+      "question": "¿Cómo se llama el dato que identifica de forma única una fila?",
+      "answer": "clave primaria",
+      "rubric": {
+        "mode": "exact",
+        "accepted": [
+          "clave primaria",
+          "llave primaria",
+          "primary key"
+        ]
+      },
+      "explanation": "Una clave primaria distingue inequívocamente cada registro.",
+      "tags": [
+        "entidades"
+      ]
+    },
+    {
+      "id": "b-04",
+      "topic": "entidades",
+      "type": "multiple-choice",
+      "difficulty": 2,
+      "question": "¿Qué atributo conviene como identificador único de Libro?",
+      "options": [
+        "Título",
+        "ID_Libro",
+        "Autor",
+        "Género"
+      ],
+      "answer": "ID_Libro",
+      "explanation": "Un identificador artificial estable evita títulos repetidos.",
+      "hint": "",
+      "tags": [
+        "entidades"
+      ]
+    },
+    {
+      "id": "b-05",
+      "topic": "entidades",
+      "type": "puzzle",
+      "difficulty": 2,
+      "question": "Un archivo tiene dos libros con el mismo título. ¿Qué atributo evita confundirlos?",
+      "answer": "id",
+      "rubric": {
+        "mode": "exact",
+        "accepted": [
+          "id",
+          "id libro",
+          "id_libro",
+          "identificador"
+        ]
+      },
+      "explanation": "Un identificador único permite diferenciarlos.",
+      "tags": [
+        "entidades"
+      ]
+    },
+    {
+      "id": "b-06",
+      "topic": "relaciones",
+      "type": "multiple-choice",
+      "difficulty": 1,
+      "question": "Si un Autor puede escribir muchos Libros y un Libro tiene un Autor, ¿cuál cardinalidad simplificada hay?",
+      "options": [
+        "1:N",
+        "1:1",
+        "N:M",
+        "0:0"
+      ],
+      "answer": "1:N",
+      "explanation": "Un autor se relaciona con muchos libros; cada libro con uno.",
+      "hint": "",
+      "tags": [
+        "relaciones"
+      ]
+    },
+    {
+      "id": "b-07",
+      "topic": "relaciones",
+      "type": "true-false",
+      "difficulty": 1,
+      "question": "Una relación N:M suele implementarse mediante una tabla intermedia.",
+      "options": [
+        "Verdadero",
+        "Falso"
+      ],
+      "answer": "Verdadero",
+      "explanation": "La tabla intermedia almacena los pares de claves foráneas.",
+      "tags": [
+        "relaciones"
+      ]
+    },
+    {
+      "id": "b-08",
+      "topic": "relaciones",
+      "type": "multiple-choice",
+      "difficulty": 2,
+      "question": "Estudiante y Curso con inscripciones múltiples en ambos sentidos es...",
+      "options": [
+        "1:1",
+        "1:N",
+        "N:M",
+        "Sin relación"
+      ],
+      "answer": "N:M",
+      "explanation": "Varios estudiantes cursan varios cursos.",
+      "hint": "",
+      "tags": [
+        "relaciones"
+      ]
+    },
+    {
+      "id": "b-09",
+      "topic": "relaciones",
+      "type": "short",
+      "difficulty": 2,
+      "question": "¿Qué tipo de clave referencia la clave primaria de otra tabla?",
+      "answer": "clave foránea",
+      "rubric": {
+        "mode": "exact",
+        "accepted": [
+          "clave foránea",
+          "llave foránea",
+          "foreign key"
+        ]
+      },
+      "explanation": "La clave foránea enlaza tablas.",
+      "tags": [
+        "relaciones"
+      ]
+    },
+    {
+      "id": "b-10",
+      "topic": "relaciones",
+      "type": "puzzle",
+      "difficulty": 2,
+      "question": "Entre Estudiante y Curso con cardinalidad N:M, escribe una posible tabla intermedia.",
+      "answer": "inscripcion",
+      "rubric": {
+        "mode": "exact",
+        "accepted": [
+          "inscripcion",
+          "inscripciones",
+          "matricula",
+          "matriculas"
+        ]
+      },
+      "explanation": "Inscripción puede guardar las claves de estudiante y curso.",
+      "tags": [
+        "relaciones"
+      ]
+    }
+  ]
+}

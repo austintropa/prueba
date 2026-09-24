@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "id": "fisica-demo",
+  "subject": "fisica",
+  "title": "Movimiento y medidas",
+  "description": "Problemas introductorios con unidades. Esta selección es DEMO y no representa el programa oficial.",
+  "order": 1,
+  "demo": true,
+  "exercises": [
+    {
+      "id": "f-01",
+      "topic": "cinematica",
+      "type": "numeric",
+      "difficulty": 1,
+      "question": "Un objeto recorre 20 m en 4 s a velocidad constante. ¿Cuál es su rapidez en m/s?",
+      "answer": 5,
+      "tolerance": 0,
+      "explanation": "Rapidez = distancia/tiempo = 20/4 = 5 m/s.",
+      "tags": [
+        "cinematica"
+      ]
+    },
+    {
+      "id": "f-02",
+      "topic": "cinematica",
+      "type": "multiple-choice",
+      "difficulty": 1,
+      "question": "¿Cuál unidad corresponde a rapidez?",
+      "options": [
+        "m",
+        "m/s",
+        "s",
+        "kg"
+      ],
+      "answer": "m/s",
+      "explanation": "Rapidez es distancia dividida por tiempo.",
+      "hint": "",
+      "tags": [
+        "cinematica"
+      ]
+    },
+    {
+      "id": "f-03",
+      "topic": "cinematica",
+      "type": "numeric",
+      "difficulty": 2,
+      "question": "A 3 m/s durante 5 s, ¿qué distancia se recorre en metros?",
+      "answer": 15,
+      "tolerance": 0,
+      "explanation": "d = v·t = 3·5 = 15 m.",
+      "tags": [
+        "cinematica"
+      ]
+    },
+    {
+      "id": "f-04",
+      "topic": "cinematica",
+      "type": "true-false",
+      "difficulty": 2,
+      "question": "Un objeto puede tener rapidez constante y cambiar de dirección.",
+      "options": [
+        "Verdadero",
+        "Falso"
+      ],
+      "answer": "Verdadero",
+      "explanation": "La rapidez es escalar; la velocidad vectorial puede cambiar si cambia la dirección.",
+      "tags": [
+        "cinematica"
+      ]
+    },
+    {
+      "id": "f-05",
+      "topic": "cinematica",
+      "type": "short",
+      "difficulty": 2,
+      "question": "Escribe la fórmula de rapidez media como razón usando d y t (sin espacios).",
+      "answer": "d/t",
+      "rubric": {
+        "mode": "exact",
+        "accepted": [
+          "d/t",
+          "d÷t"
+        ]
+      },
+      "explanation": "Rapidez media = distancia recorrida dividida por tiempo transcurrido.",
+      "tags": [
+        "cinematica"
+      ]
+    },
+    {
+      "id": "f-06",
+      "topic": "unidades",
+      "type": "numeric",
+      "difficulty": 1,
+      "question": "¿Cuántos centímetros hay en 2 metros?",
+      "answer": 200,
+      "tolerance": 0,
+      "explanation": "1 m = 100 cm, entonces 2 m = 200 cm.",
+      "tags": [
+        "unidades"
+      ]
+    },
+    {
+      "id": "f-07",
+      "topic": "unidades",
+      "type": "multiple-choice",
+      "difficulty": 1,
+      "question": "¿Cuál magnitud se mide en segundos?",
+      "options": [
+        "Masa",
+        "Tiempo",
+        "Longitud",
+        "Temperatura"
+      ],
+      "answer": "Tiempo",
+      "explanation": "El segundo es una unidad de tiempo en el SI.",
+      "hint": "",
+      "tags": [
+        "unidades"
+      ]
+    },
+    {
+      "id": "f-08",
+      "topic": "unidades",
+      "type": "numeric",
+      "difficulty": 2,
+      "question": "Convierte 1,5 km a metros.",
+      "answer": 1500,
+      "tolerance": 0,
+      "explanation": "Multiplica 1,5 por 1000: 1500 m.",
+      "tags": [
+        "unidades"
+      ]
+    },
+    {
+      "id": "f-09",
+      "topic": "unidades",
+      "type": "timed",
+      "difficulty": 2,
+      "question": "Reto rápido: ¿cuántos segundos hay en 2 minutos?",
+      "answer": "120",
+      "rubric": {
+        "mode": "exact",
+        "accepted": [
+          "120"
+        ]
+      },
+      "explanation": "1 min = 60 s; 2 min = 120 s.",
+      "tags": [
+        "unidades"
+      ],
+      "seconds": 40
+    },
+    {
+      "id": "f-10",
+      "topic": "unidades",
+      "type": "puzzle",
+      "difficulty": 2,
+      "question": "Una puerta muestra 300 cm. Escribe esa longitud en metros.",
+      "answer": "3",
+      "rubric": {
+        "mode": "exact",
+        "accepted": [
+          "3",
+          "3,0",
+          "3.0"
+        ]
+      },
+      "explanation": "Divide 300 entre 100: 3 metros.",
+      "tags": [
+        "unidades"
+      ]
+    }
+  ]
+}

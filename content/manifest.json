@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "files": [
+    "./calculo/calculo-demo.json",
+    "./fisica/fisica-demo.json",
+    "./programacion/programacion-demo.json",
+    "./bases-de-datos/bd-demo.json"
+  ]
+}
